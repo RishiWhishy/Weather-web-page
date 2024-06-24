@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://kit.fontawesome.com/57a5ab8d5e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader"></div>
+    <div class="weather">
+        <h1 class="city">City Name</h1>
+        <i class="weather-icon wi"></i>
+        <div class="degree-section">
+            <h1 class="temp">25</h1>
+            <span>°C</span>
+        </div>
+        <h2 class="description">Sunny</h2>
+        <div class="details">
+            <div class="card">
+                <p><i class="wi wi-sunrise"></i> Sunrise</p>
+                <p class="sunrise">6:00 AM</p>
+            </div>
+            <div class="card">
+                <p><i class="wi wi-sunset"></i> Sunset</p>
+                <p class="sunset">6:00 PM</p>
+            </div>
+            <div class="card">
+                <p>Highest</p>
+                <p class="high">30°C</p>
+            </div>
+            <div class="card">
+                <p>Lowest</p>
+                <p class="low">20°C</p>
+            </div>
+            <div class="card">
+                <p>Humidity</p>
+                <p class="humidity">60%</p>
+            </div>
+            <div class="card">
+                <p>Wind Speed</p>
+                <p class="windspeed">15 km/h</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

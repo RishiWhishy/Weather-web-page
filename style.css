@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    align-items: center;
+    padding: 11px;
+    text-transform: capitalize;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #ADD8E6 0%, #0000FF 100%); /* Gradient from light blue to blue */
+    font-family: 'Comfortaa', cursive, 'Poppins', sans-serif;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.weather {
+    display: none; /* Initially hidden, will be shown after data is fetched */
+    padding: 12px;
+    border-radius: 20px;
+    background-color: rgba(124, 124, 124, 0.18); /* Adjusted for better transparency */
+    width: 400px;
+    pointer-events: none;
+    backdrop-filter: blur(10px); /* Adds the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    text-align: center;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    text-align: center; /* Center-align the content */
+}
+
+.degree-section, .min, .max {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.degree-section span, .min span, .max span {
+    margin: 5px;
+    font-size: larger;
+}
+
+.weather-icon {
+    font-size: 48px; /* Adjust the size of the weather icon */
+    margin: 10px 0; /* Add some margin for spacing */
+}
